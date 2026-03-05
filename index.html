@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>up it</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash_screen" class="splash_screen">
+        <input type="password" class="password_input" id="password_input" placeholder="password">
+        <button class="enter_btn" id="enter_btn">enter</button>
+    </div>
+
+    <div id="main_content" class="main_content">
+        <div class="center_box">
+            <h1 class="coming_soon">coming soon</h1>
+            <div class="link_buttons">
+                <button class="main_btn" onclick="window.open('https://discord.com', '_blank')">discord</button>
+                <button class="main_btn" onclick="window.open('https://t.me/', '_blank')">telegram</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background_music" loop>
+        your browser does not support the audio element
+    </audio>
+
+    <div class="volume_control">
+        <div class="volume_slider_container">
+            <input type="range" class="volume_slider" id="volume_slider" min="0" max="100" value="100">
+        </div>
+        <svg class="speaker_icon" id="speaker_icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path class="sound_wave" d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path class="sound_wave" d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
